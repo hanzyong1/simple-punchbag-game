@@ -11,13 +11,13 @@
 <body>
     <div id="vue-app">
         <!-- bag image -->
-        <div id="bag">
+        <div id="bag" :class="{ burst: ended}">
 
         </div>
 
         <!-- bag health -->
         <div id="bag-health">
-            <div>
+            <div :style="{ width: health + '%'}">
                 
             </div>
         </div>
